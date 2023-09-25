@@ -20,11 +20,11 @@ const cities = [
 
 packageType.addEventListener('change',()=>{
   if(packageType.value == 'hotel+flight' && document.getElementById('city') == null ){
-    
+    const container = document.createElement("div");
     const citieSelect = document.createElement("select");
     citieSelect.name = "city";
     citieSelect.id ="city";
-    citieSelect.classList.add("form-select","mb-3","mb-md-0","me-md-2");
+    citieSelect.classList.add("form-select","mb-3","mb-lg-0","me-md-2");
     for (const city of cities){
 
         const option = document.createElement("option");
@@ -32,8 +32,8 @@ packageType.addEventListener('change',()=>{
         option.text = city;
         citieSelect.appendChild(option);
     };
-
-    form.insertBefore(citieSelect,checkIn);
+    container.appendChild(citieSelect);
+    form.insertBefore(container,checkIn);
      
   }else{
 
