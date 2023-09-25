@@ -1,0 +1,129 @@
+:root{
+
+  --primary-color:#1B1D21;
+  --secondary-color:#027a89;
+  --complentary-color:#d4d4d4;
+  --aux-color:#fff;
+  --primary-font:'Montserrat', sans-serif;
+
+
+}
+
+
+.navbar-brand{
+
+  font-family: var(--primary-font);
+}
+
+.nav-link{
+  color: var(--primary-color)!important;
+  transition: all ease-in-out 0.3s;
+}
+
+.nav-link:hover{
+  color: var(--secondary-color)!important;
+  transition: all ease-in-out 0.3s;
+}
+
+
+
+.c-nav{
+  display: contents;
+}
+
+
+
+.navbar-brand img{
+
+  width: 100px;
+}
+
+/*----hero---*/
+
+.hero {
+
+  position: relative;
+}
+
+.hero::after{
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+}
+
+
+
+
+.hero .hero__content{
+
+  position: absolute;
+  z-index: 3;
+  height:auto;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  color: var(--aux-color);
+
+}
+
+.booking{
+ 
+  background: var(--aux-color);
+  padding: 10px 20px;
+ 
+}
+
+/*---buttons--*/
+.c-btn--primary{
+
+  color: var(--aux-color);
+  font-family: var(--primary-font);
+  background: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  transition: all ease-in-out 0.3s;
+}
+.c-btn--primary:hover{
+  transition: all ease-in-out 0.3s;
+}
+
+
+
+
+@media (min-width:300px) {
+
+  .navbar-brand img{
+
+    width: 100%;
+  }
+  
+}
+
+@media (min-width:768px) {
+
+  .c-nav{
+    display: flex;
+    padding: 0;
+  }
+
+  .navbar-nav{
+
+    display: flex;
+    align-items: center;
+  
+  
+  }
+
+
+  .booking__options{
+    display: flex;
+    align-items: center;
+  }
+  
+}
