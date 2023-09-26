@@ -50,10 +50,10 @@ packageType.addEventListener('change',()=>{
 
 const checkIndate = document.querySelector('input[name="checkIn"]');
 const checkIndatepicker = new Datepicker(checkIndate, {
-    buttonClass: 'btn',
+ 
   }); 
 
 const checkOutDate = document.querySelector('input[name="checkOut"]');
 const checkOutdatepicker = new Datepicker(checkOutDate, {
-    buttonClass: 'btn',
+    
   }); 
