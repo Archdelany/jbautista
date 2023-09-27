@@ -38,7 +38,7 @@
             <a class="nav-link" href="#">Offers</a>
           </li>
           <li class="nav-link">
-            <button class="text-uppercase c-btn--primary">
+            <button class="text-uppercase c-btn--primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Book Now
             </button>
           </li>
@@ -68,13 +68,13 @@
         
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
       <div class="booking">
         <div class="container">
           <form action="#" id="booking-form" class="booking__options">
        
                     <div>
-                      <select class="form-select mb-3 mb-lg-0 me-md-2 form-control py-2" id="package-type">
+                      <select class="form-select mb-3 mb-xl-0 me-md-2 form-control py-2" id="package-type">
                         <option selected>Hotel Only</option>
                         <option value="hotel+flight">Hotel + flight</option>
                       </select>
@@ -109,7 +109,71 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid w-carrousel" id="w-carrousel">
+      <div class="container">
+
+        <div class="row">
+             <div class="col-12 col-md-4 mb-md-2">
+              <p>
+
+                How does a perfect moment in paradise look to you? it may be reading your favorite book next
+                to an infinity pool facing the ocean and islas Marietas in the distance, a swim-up bar to your side to refresh yourself whenever you need it.
+              </p>
+                 
+             </div>
+             <div class="col-12 col-md-8">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                      <img src="./assets/carrousel-1.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="./assets/carrousel-2.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/carrousel-3.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/carrousel-2.jpg" alt="" class="img-fluid">
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="./assets/carrousel-3.jpg" alt="" class="img-fluid">
+                 </div>
+                
+                </div>
+      
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+              </div>
+             </div>
+        </div>
+           
+      </div>
+    </div>
   </section>
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   <script type="module" src="./js/main.js"></script>
   <script type="module" src="./css/style.css"></script>
   <script type="module" src="./scss/styles.scss"></script>
