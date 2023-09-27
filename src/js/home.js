@@ -116,4 +116,28 @@ checkOutDatepicker.setDate('today');
   
   });
 
+window.addEventListener('resize',()=>{
 
+  var carrouselWrapper = document.getElementById('w-carrousel');
+
+  if(window.innerWidth > 1200){
+
+    gsap.to(carrouselWrapper,{marginTop:100});
+    
+  }else{
+
+      if(document.getElementById('city')){
+
+        gsap.to(carrouselWrapper,{marginTop:400});
+
+      }else{
+
+        gsap.to(carrouselWrapper,{marginTop:350});
+      }
+
+  };
+
+
+
+
+});

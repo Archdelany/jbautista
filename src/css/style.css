@@ -137,6 +137,44 @@
   margin-top: 350px;
 }
 
+.swiper-button-prev::after,.swiper-button-next::after{
+
+  content: ""!important;
+}
+.material-symbols-outlined{
+  position: relative;
+  color: var(--primary-color);
+}
+
+.material-symbols-outlined::before{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background:var(--complentary-color);
+  z-index: -1;
+  border-radius: 50%;
+  left: -30%;
+  top: -30%;
+  opacity: 0.8;
+  
+}
+
+/*--rooms section---*/
+
+.w-rooms{
+  font-size: 16px;
+}
+
+.w-rooms h1{
+  font-family: var(--primary-font);
+}
+
+.w-rooms p{
+
+  font-family: var(--primary-font);
+}
+
 
 
 
