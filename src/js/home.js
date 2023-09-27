@@ -26,11 +26,11 @@ packageType.addEventListener('change',()=>{
     const container = document.createElement("div");
     const citieSelect = document.createElement("select");
     var carrouselWrapper = document.getElementById('w-carrousel');
-
-
+    
+    container.classList.add("mb-3","mb-xxl-0","me-md-2");
     citieSelect.name = "city";
     citieSelect.id ="city";
-    citieSelect.classList.add("form-select","mb-3","mb-lg-0","me-md-2");
+    citieSelect.classList.add("form-select","py-2");
     for (const city of cities){
 
         const option = document.createElement("option");
@@ -41,9 +41,9 @@ packageType.addEventListener('change',()=>{
     container.appendChild(citieSelect);
     form.insertBefore(container,checkIn);
 
-    if(window.innerWidth < 1200){
+    if(window.innerWidth < 1400){
 
-      gsap.to(carrouselWrapper,{marginTop:400});
+      gsap.to(carrouselWrapper,{marginTop:430});
 
     };
     
@@ -56,9 +56,9 @@ packageType.addEventListener('change',()=>{
 
       document.getElementById('city').remove();
 
-      if(window.innerWidth < 1200){
+      if(window.innerWidth < 1400){
 
-        gsap.to(carrouselWrapper,{marginTop:350});
+        gsap.to(carrouselWrapper,{marginTop:380});
         
       };
 
@@ -120,7 +120,7 @@ window.addEventListener('resize',()=>{
 
   var carrouselWrapper = document.getElementById('w-carrousel');
 
-  if(window.innerWidth > 1200){
+  if(window.innerWidth > 1400){
 
     gsap.to(carrouselWrapper,{marginTop:100});
     
@@ -128,11 +128,11 @@ window.addEventListener('resize',()=>{
 
       if(document.getElementById('city')){
 
-        gsap.to(carrouselWrapper,{marginTop:400});
+        gsap.to(carrouselWrapper,{marginTop:430});
 
       }else{
 
-        gsap.to(carrouselWrapper,{marginTop:350});
+        gsap.to(carrouselWrapper,{marginTop:380});
       }
 
   };
