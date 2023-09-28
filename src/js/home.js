@@ -87,6 +87,20 @@ checkOutDatepicker.setDate('today');
 
 
 
+const checkIndateModal = document.getElementById('checkInModal');
+const checkIndatepickerModal = new Datepicker(checkIndateModal, {
+ 
+  }); 
+
+const checkOutDateModal = document.getElementById('checkOutModal');
+const checkOutDatepickerModal = new Datepicker(checkOutDateModal, {
+   
+  }); 
+
+
+checkIndatepickerModal.setDate('today');
+checkOutDatepickerModal.setDate('today');
+
 
 
   const swiper = new Swiper('.swiper', {

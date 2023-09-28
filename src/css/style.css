@@ -203,6 +203,23 @@
   color: var(--complentary-color);
 }
 
+.adults{
+  position: relative;
+}
+
+.adults::after{
+
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  z-index: 10;
+  top:0 ;
+}
+
+
+
 @media (min-width:300px) {
 
   .navbar-brand img{

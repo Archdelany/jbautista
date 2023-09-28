@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Jose Carlos Bautista | Prueba técnica </title>
   <script type="module" src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/347f60d069.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -95,23 +96,17 @@
                         calendar_month
                       </span>
                     </div>
-                    <div class=" mb-3 mb-xxl-0 me-md-2 form-group">
+                    
+                    <div class=" mb-3  me-md-2   mb-3 mb-xxl-0 form-group">
                       <label for="adults"><b>Persons</b></label>
-                      <div class="dropdown">
-                        <button class="dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="material-symbols-outlined">
-                            person
-                          </span>
-                            1 Adult
-                        </button>
-                        <ul class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">2 adults</a></li>
-                          <li><a class="dropdown-item" href="#">3 adults</a></li>
-                          <li><a class="dropdown-item" href="#">4 adults</a></li>
-                          <li><a class="dropdown-item" href="#">5 adults</a></li>
-                        </ul>
-                      </div>
+                      <select class="form-select adults" aria-label="Default select example" >
+                        <option selected > 1 Adult</option>
+                        <option value="2"> 2 Adults</option>
+                        <option value="3"> 3 Adults</option>
+                        <option value="4"> 4 Adults</option>
+                      </select>
                     </div>
+                   <div>
                    <div>
                     <button class="text-capitalize w-100 c-btn--primary" type="submit">
                       Search Now
@@ -196,14 +191,13 @@
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="container">
-          <form action="#" id="booking-form" class="booking__options">
+          <form action="#" id="booking-form" class="modal__booking--options">
        
-                    <div class="mb-3 mb-xxl-0 me-md-2">
+                    <div class="mb-3 me-md-2">
                       <select class="form-select  form-control py-2" id="package-type">
                         <option selected>Hotel Only</option>
                         <option value="hotel+flight">Hotel + flight</option>
@@ -211,50 +205,40 @@
                     </div>
                     <div id="checkInContainer" class="mb-3 mb-xxl-0 me-md-2 form-group">
                       <label for="checkIn"><b>Check In</b></label>
-                      <input type="text" name="checkIn" id="checkIn" class="form-control ps-5 py-2">
+                      <input type="text" name="checkIn" id="checkInModal" class="form-control ps-5 py-2">
                       <span class="material-symbols-outlined icon">
                         calendar_month
                       </span>
                     </div>
 
-                    <div class="me-md-2 mb-3 mb-xxl-0 form-group">
+                    <div class="me-md-2 mb-3  form-group">
                       <label for="checkOut"><b>Check Out</b></label>
-                      <input type="text" name="checkOut" id="checkOut" class=" form-control ps-5 py-2">
+                      <input type="text" name="checkOut" id="checkOutModal" class=" form-control ps-5 py-2">
                       <span class="material-symbols-outlined icon">
                         calendar_month
                       </span>
                     </div>
-                    <div class=" mb-3 mb-xxl-0 me-md-2 form-group">
+                    <div class=" mb-3  me-md-2 form-group">
                       <label for="adults"><b>Persons</b></label>
-                      <div class="dropdown">
-                        <button class="dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="material-symbols-outlined">
-                            person
-                          </span>
-                            1 Adult
-                        </button>
-                        <ul class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">2 adults</a></li>
-                          <li><a class="dropdown-item" href="#">3 adults</a></li>
-                          <li><a class="dropdown-item" href="#">4 adults</a></li>
-                          <li><a class="dropdown-item" href="#">5 adults</a></li>
-                        </ul>
-                      </div>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                      </select>
                     </div>
                    <div>
-                    <button class="text-capitalize w-100 c-btn--primary" type="submit">
+                    <button class="text-capitalize w-100 c-btn--primary my-2" type="submit">
                       Search Now
                    </button>
                    </div>
           </form>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="c-btn--primary" data-bs-dismiss="modal">Close</button>
-      </div>
     </div>
   </div>
 </div>
+ 
   <script type="module" src="./js/main.js"></script>
   <script type="module" src="./css/style.css"></script>
   <script type="module" src="./scss/styles.scss"></script>
