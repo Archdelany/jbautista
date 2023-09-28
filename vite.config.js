@@ -1,6 +1,6 @@
 
 export default {
- bse:'/<REPO>/',
+ base:'https://archdelany.github.io/jbautista/',
  root:'src',
   build: {
     outDir: '../dist',
